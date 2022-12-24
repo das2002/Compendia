@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="static\css\index_styles.css">
+    <title>Compendia</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Compendia</h1>
+        
+        <form id="lecture-search-form">
+            <label for="college-search">What school is the lecture from?</label>
+            <input type="search" id="college-search" name="college">
+            
+            <label for="class-search">What class is the lecture from?</label>
+            <input type="search" id="class-search" name="class">
+    
+            <input type="submit" id="class-search" value="Submit">
+
+        </form>
+
+        <div id="results">
+            <h2>Results</h2>
+            <ul id="search_results_list">
+
+            </ul>
+        </div>
+
+        <div id="upload">
+            <h2>Lecture not in the results list? Feel free to upload it yourself.</h2>
+            <label for="media_type">What is the media type of the lecture?</label>
+            <select name = "media_type" id = "media_type_list">
+                <option>YouTube</option>
+                <option>Zoom Recording</option>
+                <option>MP4 File</option>
+            </select>
+            <form id= "youtube_form">
+                <input type="url">
+            </form>
+
+            <form id="zoom_url">
+                <input type="url">
+            </form>
+
+            <form id="mp4-download">
+                <input type="file">
+            </form>
+            
+        </div>
+        
+    </div>
+</body>
+</html>
